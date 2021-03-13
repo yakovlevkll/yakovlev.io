@@ -1,0 +1,54 @@
+@import 'colors'
+@import 'typography'
+
+html
+  background color-bgr
+  color color-font
+  font font-main
+
+body
+  width 100vw
+  min-height 94vh
+  margin 0
+  padding 0
+
+#app
+  display flex
+  flex-direction column
+  align-items center
+
+main
+  max-width 1200px
+
+/* TEXT */
+
+h1
+  margin-bottom 1.3rem
+
+a
+  color color-link
+  text-decoration none
+
+.icon
+  height: 28px;
+  width: 28px;
+  margin-right: 12px;
+
+.link
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 1.2rem;
+
+/* HEADER */
+
+.site-header
+  box-sizing border-box
+  width 100%
+  padding 1rem 2rem
+  // background darken(color-bgr, 2%)
+  // border-bottom solid 0.02rem darken(color-bgr, 5%)
+
+.site-logo
+  text-transform uppercase
+  color darken(color-bgr, 50%)
