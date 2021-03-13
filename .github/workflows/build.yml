@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build a container
-        run: docker build -t yakovlev.io:latest .
+        run: docker-compose up --build
