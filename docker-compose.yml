@@ -1,11 +1,10 @@
 version: "3.9"
 services:
-  frontend:
-    container_name: yakovlev.io:latest
+  yakovlev-io-client:
+    container_name: YakovlevIO
       build:
-        context: .
+        context: ./client
         dockerfile: Dockerfile
-    volumes:
-      - dist:/app/dist
-volumes:
-  dist:
+    ports:
+      - "80:3000"
+    env_file: ./client/.env
