@@ -27,8 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Compose and run
-        env:
-          PARSERDATA_TOKEN: ${{ secrets.PARSERDATA_TOKEN }}
         run: |
-          envsubst < client/example.env > client/.env
           docker-compose -f docker-compose.yml up -d --build
