@@ -23,16 +23,6 @@ import {
 
 import Logo from '$cmp/Logo'
 
-const solutions = [
-  {
-    name: 'Schedule',
-    description:
-      'Get a better understanding of where your traffic is coming from.',
-    href: '/schedule',
-    icon: CalendarIcon,
-  },
-]
-
 const resources = [
   {
     name: 'Help Center',
@@ -80,7 +70,6 @@ const Header: React.FC<ComponentProps> = ({ className }) => {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-              
                 <Logo />
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
@@ -91,39 +80,30 @@ const Header: React.FC<ComponentProps> = ({ className }) => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  {solutions.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    >
-                      <item.icon
-                        className="flex-shrink-0 h-6 w-6 text-primary-600"
-                        aria-hidden="true"
-                      />
-                      <span className="ml-3 text-base font-medium text-gray-900">
-                        {item.name}
-                      </span>
-                    </Link>
-                  ))}
+                  <Popover.Button
+                    as={Link}
+                    to="/schedule"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                  >
+                    <CalendarIcon
+                      className="flex-shrink-0 h-6 w-6 text-primary-600"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 text-base font-medium text-gray-900">
+                      Schedule
+                    </span>
+                  </Popover.Button>
                 </nav>
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Link
-                  to="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Pricing
-                </Link>
-
-                <Link
+                {/* <Link
                   to="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Docs
-                </Link>
+                </Link> */}
                 {resources.map((item) => (
                   <Link
                     key={item.name}
@@ -133,23 +113,6 @@ const Header: React.FC<ComponentProps> = ({ className }) => {
                     {item.name}
                   </Link>
                 ))}
-              </div>
-              <div>
-                <Link
-                  to="/login"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 hover:bg-primary-700"
-                >
-                  Sign up
-                </Link>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <Link
-                    to="login"
-                    className="text-primary-600 hover:text-primary-500"
-                  >
-                    Sign in
-                  </Link>
-                </p>
               </div>
             </div>
           </div>
