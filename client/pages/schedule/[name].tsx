@@ -62,7 +62,7 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
         />
       </Head>
       <main
-        className="px-2 pt-4 pb-4 max-w-sm mx-auto flex flex-col"
+        className="px-2 pt-4 pb-4 max-w-sm mx-auto flex flex-col flex-nowrap"
         style={{ height: 'calc(100vh - 72px)' }}
       >
         <h1 className="text-2xl">Free time</h1>
