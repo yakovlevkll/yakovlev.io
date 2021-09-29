@@ -6,7 +6,6 @@ const pages: ISchedulePages = {
   dubai: { region: 'Asia', city: 'Dubai' },
   barcelona: { region: 'Europe', city: 'Barcelona' },
   tallinn: { region: 'Europe', city: 'Tallinn' },
-  toronto: { region: 'America', city: 'Toronto' },
 }
 
 export default pages
