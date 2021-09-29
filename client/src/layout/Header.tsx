@@ -37,7 +37,7 @@ interface ComponentProps extends Props {}
 
 const Header: React.FC<ComponentProps> = ({ className }) => {
   return (
-    <Popover className="bg-white z-20">
+    <Popover className="bg-white z-20" as="header">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 border-b border-gray-200 ">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
