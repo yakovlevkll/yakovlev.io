@@ -1,8 +1,8 @@
-import type { GetStaticProps, GetStaticPaths, NextPage } from 'next'
+import type { GetStaticPaths, NextPage } from 'next'
 import Head from 'next/head'
 
 import pages from '$api/schedulePages'
-import { ISchedulePage } from '$root/src/services/api/typings'
+import { ISchedulePage } from '$api/typings'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on posts
@@ -55,23 +55,26 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
   return (
     <>
       <Head>
-        <title>
-          Free time: {page.region}, {page.city}
-        </title>
+        <title>Free time | {page.city}</title>
+        <meta
+          name="description"
+          content={`${page.emoji} ${page.city}, ${page.country} (${page.time})"`}
+        />
       </Head>
-      <main className="absolute top-0 w-full px-2 pt-20 pb-4 h-screen box-border">
-        <div className="max-w-sm mx-auto flex flex-col h-full">
-          <h1 className="text-xl">Free time</h1>
-          <h2 className="text-md">
-            {page.emoji} {page.city} time ({page.time})
-          </h2>
-          <iframe
-            src={link}
-            frameBorder="0"
-            scrolling="no"
-            className="w-full my-2 border-0 flex-grow"
-          ></iframe>{' '}
-        </div>
+      <main
+        className="px-2 pt-4 pb-4 max-w-sm mx-auto flex flex-col"
+        style={{ height: 'calc(100vh - 72px)' }}
+      >
+        <h1 className="text-2xl">Free time</h1>
+        <h2 className="text-lg">
+          {page.emoji} {page.city} time ({page.time})
+        </h2>
+        <iframe
+          src={link}
+          frameBorder="0"
+          scrolling="no"
+          className="w-full my-2 border-0 flex-grow"
+        />
       </main>
     </>
   )

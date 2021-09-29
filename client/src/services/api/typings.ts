@@ -3,6 +3,7 @@ export interface ISchedulePage {
   city: string
   time: string
   emoji: string
+  country: string
 }
 
 export interface ISchedulePages {
