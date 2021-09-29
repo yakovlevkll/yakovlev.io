@@ -14,7 +14,7 @@
 		"esbenp.prettier-vscode"
 	],
 	"runArgs": [
-		"-m=8g",
+		"-m=12g",
 		"--env-file",
 		".env"
 	],
