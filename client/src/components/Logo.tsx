@@ -14,7 +14,7 @@ interface ComponentProps extends Props {}
 
 const Logo: React.FC<ComponentProps> = ({ className }) => {
   return (
-    <Link to="/">
+    <Link to="/" className="text-gray-900">
       <span
         className={`text-2xl font-bold ${className}`}
         style={{ fontFamily: 'Montserrat' }}

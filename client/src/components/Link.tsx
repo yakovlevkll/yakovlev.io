@@ -23,12 +23,13 @@ const Link: React.FC<ComponentProps> = ({
   target,
   rel,
 }) => {
+  const cls = className ? className : 'underline text-primary'
   return (
     // <a href={to} className={`${className}`} target={target} rel={rel}>
     //   {children}
     // </a>
     <NextLink href={to}>
-      <a className={`${className}`}>{children}</a>
+      <a className={cls}>{children}</a>
     </NextLink>
   )
 }

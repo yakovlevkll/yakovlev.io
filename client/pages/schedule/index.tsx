@@ -10,9 +10,9 @@ const Schedule: NextPage = ({}) => {
       <Head>
         <title>Free time</title>
       </Head>
-      <main className="px-2 py-4 max-w-xs mx-auto">
-        <h1 className="text-xl">Free time</h1>
-        <ul className="text-md">
+      <main className="px-2 py-6 max-w-lg mx-auto">
+        <h1 className="text-3xl">Free time</h1>
+        <ul className="text-lg mt-4">
           {Object.entries(pages).map(([link, el]) => (
             <li key={el.city}>
               <Link

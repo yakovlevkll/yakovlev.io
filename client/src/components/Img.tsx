@@ -1,5 +1,5 @@
 // Typings
-import { Props } from "$cmp/typings";
+import { Props } from '$cmp/typings'
 // import {  } from './typings'
 
 // Plugins
@@ -8,16 +8,16 @@ import { Props } from "$cmp/typings";
 // Styles, icons, etc.
 
 // Components
-import Image from "next/image";
+import Image from 'next/image'
 
 interface ComponentProps extends Props {
-  src: string;
-  alt: string;
+  src: string
+  alt: string
 }
 
 const Img: React.FC<ComponentProps> = ({ className, src, alt }) => {
-  return <img src={src} alt={alt} />;
+  return <img src={src} alt={alt} className={className} />
   // return <Image src={src} alt={alt} layout="fill" />;
-};
+}
 
-export default Img;
+export default Img
