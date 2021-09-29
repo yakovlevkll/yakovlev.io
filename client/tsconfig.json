@@ -29,6 +29,9 @@
       "$/*": [
         "src/modules/*"
       ],
+      "$api/*": [
+        "src/services/api/*"
+      ],
       "$cmp/*": [
         "src/components/*"
       ],
