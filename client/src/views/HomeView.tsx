@@ -23,10 +23,10 @@ const Home: React.FC<ComponentProps> = ({ className }) => {
       </Head>
       <main className="max-w-lg mx-auto px-2 py-6">
         <h1 className="text-3xl">Welcome</h1>
-        <div className="text-lg py-2">
+        <div className="text-lg mt-4">
           <p>Things are almost ready.</p>
           <p>Stay tuned.</p>
-          <p>
+          <p className="mt-4">
             <Link
               to="tg://yakovlev_kll"
               className="flex items-center underline text-primary"
