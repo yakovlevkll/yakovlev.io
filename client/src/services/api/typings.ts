@@ -1,8 +1,10 @@
 export interface ISchedulePage {
-    region: string
-    city: string
+  region: string
+  city: string
+  time: string
+  emoji: string
 }
 
 export interface ISchedulePages {
-    [key: string]: ISchedulePage
+  [key: string]: ISchedulePage
 }
