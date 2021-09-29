@@ -59,17 +59,19 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
           Free time: {page.region}, {page.city}
         </title>
       </Head>
-      <main className="h-screen px-2 py-4 max-w-xs mx-auto">
+      <main
+        className="px-2 py-4 max-w-xs mx-auto flex flex-col"
+        style={{ height: '90vh' }}
+      >
         <h1 className="text-xl">Free time</h1>
-        <h2 className="text-lg">
+        <h2 className="text-md">
           {page.emoji} {page.city} time ({page.time})
         </h2>
         <iframe
           src={link}
-          style={{ borderWidth: 0 }}
           frameBorder="0"
           scrolling="no"
-          className="w-full flex-grow"
+          className="w-full my-2 border-0 flex-grow"
         ></iframe>
       </main>
     </>
