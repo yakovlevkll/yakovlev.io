@@ -61,10 +61,7 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
           content={`${page.emoji} ${page.city}, ${page.country} (${page.time})"`}
         />
       </Head>
-      <main
-        className="px-2 pt-4 pb-4 max-w-sm mx-auto flex flex-col flex-nowrap"
-        style={{ height: 'calc(100vh - 72px)' }}
-      >
+      <main className="h-screen px-4 pt-20 pb-4 max-w-sm flex flex-col flex-nowrap mx-auto">
         <h1 className="text-2xl">Free time</h1>
         <h2 className="text-lg">
           {page.emoji} {page.city} time ({page.time})

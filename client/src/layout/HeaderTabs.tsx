@@ -20,8 +20,14 @@ const HeaderTabs: React.FC<ComponentProps> = ({ className }) => {
   return (
     <Popover.Group as="nav" className="hidden md:flex space-x-10">
       <Link
+        to="/contacts"
+        className="text-base font-medium text-gray-300 hover:text-gray-200"
+      >
+        Contacts
+      </Link>
+      <Link
         to="/schedule"
-        className="text-base font-medium text-gray-500 hover:text-gray-900"
+        className="text-base font-medium text-gray-300 hover:text-gray-200"
       >
         Schedule
       </Link>

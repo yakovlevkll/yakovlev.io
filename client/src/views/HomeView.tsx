@@ -19,25 +19,18 @@ const Home: React.FC<ComponentProps> = ({ className }) => {
   return (
     <>
       <Head>
-        <title>Yakovlev.IO</title>
+        <title>YAKOVLEV.IO</title>
       </Head>
-      <main className="max-w-lg mx-auto py-6 px-2">
-        <article className="text-xl">
-          <h1 className="text-3xl">Welcome</h1>
+      <main
+        className="max-w-lg mx-auto py-6 px-2 flex flex-col justify-center"
+        style={{ height: 'calc(100vh - 20rem)' }}
+      >
+        <article className="text-2xl font-light text-gray-800">
+          <h1 className="text-5xl mb-6">Welcome</h1>
           <p>Things are almost ready.</p>
           <p>Stay tuned.</p>
           <p>
-            <Link
-              to="tg://yakovlev_kll"
-              className="flex items-center text-primary"
-            >
-              <Img
-                src="/icons/telegram.svg"
-                alt="Telegram icon"
-                className="h-8 w-8 pr-2"
-              />
-              <span>@yakovlev_kll</span>
-            </Link>
+            
           </p>
         </article>
       </main>

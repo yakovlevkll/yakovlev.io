@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Montserrat', 'Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.indigo[500],
@@ -43,6 +43,8 @@ module.exports = {
         'dark-700': '#2C2B23',
         'dark-800': '#272822',
         'dark-900': '#21201B',
+        bgr: '#2e302e',
+        color: colors.gray[200],
       },
     },
   },

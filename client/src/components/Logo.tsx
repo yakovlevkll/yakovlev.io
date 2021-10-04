@@ -14,12 +14,12 @@ interface ComponentProps extends Props {}
 
 const Logo: React.FC<ComponentProps> = ({ className }) => {
   return (
-    <Link to="/" className="text-gray-900">
+    <Link to="/" className="text-gray-100">
       <span
-        className={`text-2xl font-bold ${className}`}
-        style={{ fontFamily: 'Montserrat' }}
+        className={`text-2xl ${className}`}
+        style={{ fontFamily: 'Montserrat', fontWeight: 400 }}
       >
-        Yakovlev.io
+        YAKOVLEV.IO
       </span>
     </Link>
   )
