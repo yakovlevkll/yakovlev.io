@@ -4,6 +4,7 @@ const pages: ISchedulePages = {
   moscow: {
     region: 'Europe',
     city: 'Moscow',
+    time_city: 'Moscow',
     time: 'GMT+3',
     emoji: '🇷🇺',
     country: 'Russia',
@@ -11,6 +12,7 @@ const pages: ISchedulePages = {
   almaty: {
     region: 'Asia',
     city: 'Almaty',
+    time_city: 'Almaty',
     time: 'GMT+6',
     emoji: '🇰🇿',
     country: 'Kazakhstan',
@@ -18,6 +20,7 @@ const pages: ISchedulePages = {
   dubai: {
     region: 'Asia',
     city: 'Dubai',
+    time_city: 'Dubai',
     time: 'GMT+4',
     emoji: '🇦🇪',
     country: 'UAE',
@@ -25,6 +28,7 @@ const pages: ISchedulePages = {
   barcelona: {
     region: 'Europe',
     city: 'Barcelona',
+    time_city: 'Madrid',
     time: 'GMT+2',
     emoji: '🇪🇸',
     country: 'Spain',
@@ -32,6 +36,7 @@ const pages: ISchedulePages = {
   tallinn: {
     region: 'Europe',
     city: 'Tallinn',
+    time_city: 'Tallinn',
     time: 'GMT+2',
     emoji: '🇪🇪',
     country: 'Estonia',
@@ -39,6 +44,7 @@ const pages: ISchedulePages = {
   toronto: {
     region: 'America',
     city: 'Toronto',
+    time_city: 'Toronto',
     time: 'GMT-4',
     emoji: '🇨🇦',
     country: 'Canada',

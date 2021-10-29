@@ -37,7 +37,7 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
     'height=600',
     'wkst=2',
     'bgcolor=%23343434',
-    `ctz=${page.region}%2F${page.city}`,
+    `ctz=${page.region}%2F${page.time_city}`,
     'src=MDlpaDVwNm0wdThxcjc3MWkxZjY2N2dnajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ',
     'color=%23009688',
     'showTitle=0',
@@ -55,10 +55,12 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
   return (
     <>
       <Head>
-        <title>Free time | {page.city}</title>
+        <title>
+          Free time | {page.emoji} {page.city}
+        </title>
         <meta
           name="description"
-          content={`${page.emoji} ${page.city}, ${page.country} (${page.time})"`}
+          content={`${page.emoji} ${page.city}, ${page.country} (${page.time})`}
         />
       </Head>
       <main className="h-screen px-4 pt-20 pb-4 max-w-sm flex flex-col flex-nowrap mx-auto">
