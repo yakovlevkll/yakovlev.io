@@ -1,0 +1,17 @@
+[
+  {
+    "type": "telegram",
+    "url": "https://t.me/yakovlev_io",
+    "alt": "Follow on Telegram"
+  },
+  {
+    "type": "github",
+    "url": "https://github.com/yakovlevkll",
+    "alt": "Follow on Github"
+  },
+  {
+    "type": "linkedin",
+    "url": "",
+    "alt": "Follow on Linkedin"
+  }
+]

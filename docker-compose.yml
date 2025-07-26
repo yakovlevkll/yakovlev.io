@@ -1,10 +1,8 @@
-version: "3.1"
 services:
-  yakovlev_io_client:
-    container_name: YakovlevIOClient
+  app:
+    container_name: yakovlev.io
     build:
-      context: ./client
+      context: .
       dockerfile: Dockerfile
     ports:
-      - "80:3000"
-    env_file: ./client/.env
+      - 80:3000
