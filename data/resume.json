@@ -9,14 +9,14 @@
   {
     "company": "ProfiSketch",
     "title": "Tech lead",
-    "logo": "/icons/facebook.svg",
+    "logo": "/icons/profisketch.svg",
     "start": "2021",
     "end": "2023"
   },
   {
     "company": "Self-employed",
     "title": "Developer",
-    "logo": "/icons/facebook.svg",
+    "logo": "/favicon.ico",
     "start": "2015",
     "end": "2021"
   }
