@@ -1,4 +1,4 @@
-import config from './config.json'
+import config from './config'
 import routes from './routes'
 
 export { config, routes }
