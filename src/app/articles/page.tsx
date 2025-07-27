@@ -37,7 +37,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 }
 
 export const metadata: Metadata = {
-  title: 'Articles',
+  title: config['articles.title'],
   description: config['articles.description'],
 }
 

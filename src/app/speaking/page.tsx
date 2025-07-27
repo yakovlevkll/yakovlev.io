@@ -4,7 +4,7 @@ import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-import config from "@config"
+import { config } from '@config'
 
 function SpeakingSection({
   children,
@@ -43,7 +43,7 @@ function Appearance({
 }
 
 export const metadata: Metadata = {
-  title: 'Speaking',
+  title: config['speaking.title'],
   description: config['speaking.heading'],
 }
 
