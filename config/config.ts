@@ -35,6 +35,11 @@ const config = {
   'uses.heading': 'Things that I recommend',
   'uses.description':
     'I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff.',
+
+  'schedule.title': 'Schedule',
+  'schedule.heading': 'My calendar',
+  'schedule.description':
+    'Lorem ipsum dolor sit amet... with different timezones around the world',
 }
 
 export default config

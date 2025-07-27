@@ -1,13 +1,13 @@
 import type { GetStaticPaths, NextPage } from 'next'
 import Head from 'next/head'
 
-import pages from '$api/schedulePages'
-import { ISchedulePage } from '$api/typings'
+import { schedule } from '@data'
+import { SchedulePage } from './types'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on posts
-  const paths = Object.keys(pages).map((name) => ({
-    params: { name },
+  const paths = schedule.map((el) => ({
+    params: { name: el.city.toLowerCase() },
   }))
 
   // We'll pre-render only these paths at build time.
@@ -22,12 +22,12 @@ interface IStaticPropsContext {
 }
 
 export const getStaticProps = async ({ params }: IStaticPropsContext) => {
-  const page = pages[params.name]
+  const page = schedule.find((el) => el.city.toLowerCase() === params.name)
   return { props: { page } }
 }
 
 interface PageProps {
-  page: ISchedulePage
+  page: SchedulePage
 }
 
 const Schedule: NextPage<PageProps> = ({ page }) => {
@@ -63,7 +63,7 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
           content={`${page.emoji} ${page.city}, ${page.country} (${page.time})`}
         />
       </Head>
-      <main className="h-screen px-4 pt-20 pb-4 max-w-sm flex flex-col flex-nowrap mx-auto">
+      <main className="mx-auto flex h-screen max-w-sm flex-col flex-nowrap px-4 pt-20 pb-4">
         <h1 className="text-2xl">Free time</h1>
         <h2 className="text-lg">
           {page.emoji} {page.city} time ({page.time})
@@ -72,7 +72,7 @@ const Schedule: NextPage<PageProps> = ({ page }) => {
           src={link}
           frameBorder="0"
           scrolling="no"
-          className="w-full my-2 border-0 flex-grow"
+          className="my-2 w-full flex-grow border-0"
         />
       </main>
     </>
