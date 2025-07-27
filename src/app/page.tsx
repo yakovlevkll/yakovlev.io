@@ -9,7 +9,7 @@ import { Container } from '@/components/Container'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
-import config from '@config'
+import { config } from '@config'
 import { resume as resumeData } from '@data'
 import Img from '@/components/Img'
 import { Socials } from '@/components/socials'

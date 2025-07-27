@@ -3,18 +3,16 @@ import { type Metadata } from 'next'
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
 
-import config from '@config'
+import { config } from '@config'
 
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
     template: `%s - ${config['profile.fullname']}`,
-    default:
-      `${config['profile.fullname']} - ${config['profile.short_description']}`,
+    default: `${config['profile.fullname']} - ${config['profile.short_description']}`,
   },
-  description: config['profile.long_about']
-    ,
+  description: config['profile.long_about'],
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

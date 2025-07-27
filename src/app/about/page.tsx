@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 
 import portraitImage from '@/images/portrait.webp'
-import config from '@config'
+import { config } from '@config'
 import { SocialLink, Socials } from '@/components/socials'
 
 export const metadata: Metadata = {

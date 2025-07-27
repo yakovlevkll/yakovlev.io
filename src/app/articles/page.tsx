@@ -5,7 +5,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
-import config from '@config'
+import { config } from '@config'
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (

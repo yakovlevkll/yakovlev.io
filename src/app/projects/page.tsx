@@ -5,7 +5,7 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 import { projects } from '@data'
-import config from '@config'
+import { config } from '@config'
 import Img from '@/components/Img'
 import { LinkIcon } from '@/components/icons'
 

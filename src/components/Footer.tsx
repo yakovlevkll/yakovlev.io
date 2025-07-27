@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
-import config from '@config'
+import { config } from '@config'
 
 function NavLink({
   href,
@@ -35,8 +35,8 @@ export function Footer() {
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} {config['profile.fullname']}. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} {config['profile.fullname']}.
+                All rights reserved.
               </p>
             </div>
           </ContainerInner>
